@@ -1,20 +1,6 @@
-Movie Search
-
-The Rules of Attraction
-Year: 2002
-IMDB Rating: 6.7
-Country: USA, Germany
-Language: English, German
-Plot: The incredibly spoiled and overprivileged students of Camden College are a backdrop for an unusual love triangle between a drug dealer, a virgin and a bisexual classmate.
-Actors: James Van Der Beek, Shannyn Sossamon, Jessica Biel, Kip Pardue
-Rotten Tomatoes Rating: 3.2
-Rotten Tomatoes URL: http://www.rottentomatoes.com/m/rules_of_attraction/
-
-------------
-
 Tweets
 
-undefinedMon Jan 23 15:22:31 +0000 2017
+Mon Jan 23 15:22:31 +0000 2017
 @evansegerman @johnlouros is Carlos joining them?
 
 Fri Dec 23 18:34:08 +0000 2016
@@ -84,15 +70,6 @@ Artist: blink-182
 Song Name: What's My Age Again?
 From Album: Enema Of The State
 Preview: https://p.scdn.co/mp3-preview/51b3254f8c1f6d0d8839227f37e82a1a62a27260?cid=null
-
-------------
-
-Spotify Search
-
-Artist: Backstreet Boys
-Song Name: I Want It That Way
-From Album: The Hits--Chapter One
-Preview: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=null
 
 ------------
 
