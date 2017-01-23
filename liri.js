@@ -50,6 +50,24 @@ function movie() {
 }
 
 function says() {
+  var fs = require('fs');
+
+  fs.readFile('./random.txt', 'utf8', function(error, data) {
+    var dataArr = data.split(',');
+    command = dataArr[0];
+    searchName = dataArr[1];
+    switch (command) {
+      case "my-tweets":
+        tweets();
+        break;
+      case "spotify-this-song":
+        spotify();
+        break;
+      case "movie-this":
+        movie();
+        break;
+    }
+  })
 
 }
 
