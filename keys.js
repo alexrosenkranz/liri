@@ -1,4 +1,3 @@
-console.log('this is loaded');
 var Twitter = require('twitter');
 
 var client = new Twitter({
