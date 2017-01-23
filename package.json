@@ -1,0 +1,25 @@
+{
+  "name": "liri-node-app",
+  "version": "1.0.0",
+  "description": "liri node js app with spotify, twitter, request, and fs",
+  "main": "liri.js",
+  "scripts": {
+    "test": "node liri.js my-tweets"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexrosenkranz/liri.git"
+  },
+  "keywords": [
+    "spotify",
+    "twitter",
+    "request",
+    "omdb"
+  ],
+  "author": "alex rosenkranz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexrosenkranz/liri/issues"
+  },
+  "homepage": "https://github.com/alexrosenkranz/liri#readme"
+}

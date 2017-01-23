@@ -93,7 +93,6 @@ function appendLog(type) {
 switch (command) {
   case "my-tweets":
     tweets();
-
     break;
   case "spotify-this-song":
     spotify();

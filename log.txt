@@ -73,3 +73,35 @@ Preview: https://p.scdn.co/mp3-preview/51b3254f8c1f6d0d8839227f37e82a1a62a27260?
 
 ------------
 
+Movie Search
+
+Mr. Nobody
+Year: 2009
+IMDB Rating: 7.9
+Country: Belgium, Germany, Canada, France
+Language: English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+Rotten Tomatoes Rating: 3.8
+Rotten Tomatoes URL: http://www.rottentomatoes.com/m/mr-nobody/
+
+------------
+
+Spotify Search
+
+Artist: Third Eye Blind
+Song Name: Narcolepsy
+From Album: Third Eye Blind
+Preview: https://p.scdn.co/mp3-preview/378c06b9f54710a42098ba654cab4bdf898cac18?cid=null
+
+------------
+
+Spotify Search
+
+Artist: St. Lucia
+Song Name: Elevate
+From Album: When The Night
+Preview: https://p.scdn.co/mp3-preview/983050532cbf1fb32bae3023cb3811e08dd1e06d?cid=null
+
+------------
+
