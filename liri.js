@@ -1,31 +1,28 @@
 var key = require('./keys.js');
 var fs = require('fs');
-
+var result;
 var command = process.argv[2];
 var searchName = process.argv[3]
 
 
 function tweets() {
   var params = {screen_name: 'alexrosenkranz', count: 20};
+  var requestType = "Tweets";
 
   key.twitterKeys.get('statuses/user_timeline', params, function(error, tweets, respond) {
     if(error) throw error; 
-    var response;
     for (var i = 0; i < 20; i++) {
-      response += tweets[i].created_at + "\n" + tweets[i].text + "\n\n";
+      result += tweets[i].created_at + "\n" + tweets[i].text + "\n\n";
     }
-    console.log(response);
-    fs.appendFile("log.txt", "Recent Tweets \n\n" + response + "\n\n------------\n\n", function(err) {
-      if(err) {
-        return console.log(err);
-      }
-    });
+    console.log(result);
+    appendLog(requestType);
   });
   
 }
 
 function spotify() {
   var spotify = require('spotify');
+  var requestType = "Spotify Search";
   
   if (!searchName) {
     searchName = 'Ace Of Base The Sign'
@@ -36,35 +33,29 @@ function spotify() {
         console.log('Error occurred: ' + err);
         return;
     }
-    var response = 'Artist: ' + data.tracks.items[0].artists[0].name + '\nSong Name: ' + data.tracks.items[0].name + '\nFrom Album: ' + data.tracks.items[0].album.name + '\nPreview: ' + data.tracks.items[0].preview_url;
-    console.log(response);
-    fs.appendFile("log.txt", "Song Request \n\n" + response + "\n\n------------\n\n", function(err) {
-      if(err) {
-        return console.log(err);
-      }
-    });
+    result = 'Artist: ' + data.tracks.items[0].artists[0].name + '\nSong Name: ' + data.tracks.items[0].name + '\nFrom Album: ' + data.tracks.items[0].album.name + '\nPreview: ' + data.tracks.items[0].preview_url;
+    console.log(result);
+    appendLog(requestType);
+
   });
 
 }
 
 function movie() {
   var request = require('request');
-
+  var requestType = "Movie Search";
+  
   if(!searchName) {
     searchName = "Mr. Nobody";
   }
+  
   request.get('http://www.omdbapi.com/?r=json&tomatoes=true&t=' + searchName, function (error, response, movie) {
     if (!error && response.statusCode == 200) {
       movie = JSON.parse(movie);
-      var response = movie.Title + '\nYear: ' + movie.Year + '\nIMDB Rating: ' + movie.imdbRating + '\nCountry: ' + movie.Country + '\nLanguage: ' + movie.Language + '\nPlot: ' + movie.Plot + '\nActors: ' + movie.Actors + '\nRotten Tomatoes Rating: ' + movie.tomatoUserRating + '\nRotten Tomatoes URL: ' + movie.tomatoURL;
+      result = movie.Title + '\nYear: ' + movie.Year + '\nIMDB Rating: ' + movie.imdbRating + '\nCountry: ' + movie.Country + '\nLanguage: ' + movie.Language + '\nPlot: ' + movie.Plot + '\nActors: ' + movie.Actors + '\nRotten Tomatoes Rating: ' + movie.tomatoUserRating + '\nRotten Tomatoes URL: ' + movie.tomatoURL;
       
-      console.log(response);
-
-      fs.appendFile("log.txt", "Movie Request \n\n" + response + "\n\n------------\n\n", function(err) {
-      if(err) {
-        return console.log(err);
-      }
-    });
+      console.log(result);
+      appendLog(requestType);
     }
   })
 }
@@ -88,7 +79,14 @@ function says() {
         break;
     }
   })
+}
 
+function appendLog(type) {
+  fs.appendFile("log.txt", type +  "\n\n" + result + "\n\n------------\n\n", function(err) {
+      if(err) {
+        return console.log(err);
+      }
+    });
 }
 
 
