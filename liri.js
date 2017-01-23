@@ -36,7 +36,17 @@ function spotify() {
 }
 
 function movie() {
+  var request = require('request');
 
+  if(!searchName) {
+    searchName = "Mr. Nobody";
+  }
+  request.get('http://www.omdbapi.com/?r=json&tomatoes=true&t=' + searchName, function (error, response, movie) {
+    if (!error && response.statusCode == 200) {
+      movie = JSON.parse(movie);
+      console.log(movie.Title + '\nYear: ' + movie.Year + '\nIMDB Rating: ' + movie.imdbRating + '\nCountry: ' + movie.Country + '\nLanguage: ' + movie.Language + '\nPlot: ' + movie.Plot + '\nActors: ' + movie.Actors + '\nRotten Tomatoes Rating: ' + movie.tomatoUserRating + '\nRotten Tomatoes URL: ' + movie.tomatoURL);
+    }
+  })
 }
 
 function says() {
