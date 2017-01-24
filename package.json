@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/alexrosenkranz/liri/issues"
   },
-  "homepage": "https://github.com/alexrosenkranz/liri#readme"
+  "homepage": "https://github.com/alexrosenkranz/liri#readme",
+  "dependencies": {
+    "request": "^2.79.0"
+  }
 }
