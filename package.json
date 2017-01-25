@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/alexrosenkranz/liri#readme",
   "dependencies": {
-    "request": "^2.79.0"
+    "request": "^2.79.0",
+    "spotify": "^0.3.0",
+    "twitter": "^1.7.0"
   }
 }
