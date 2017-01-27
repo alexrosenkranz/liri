@@ -2,7 +2,7 @@ var key = require('./keys.js');
 var fs = require('fs');
 var result = '';
 var command = process.argv[2];
-var searchName = process.argv[3]
+var searchName = process.argv.splice(3).join(" ");
 
 
 function tweets() {
@@ -95,6 +95,7 @@ switch (command) {
     tweets();
     break;
   case "spotify-this-song":
+    console.log(searchName);
     spotify();
     break;
   case "movie-this":
