@@ -78,7 +78,7 @@ function says() {
         movie();
         break;
     }
-  })
+  });
 }
 
 function appendLog(type) {
@@ -104,4 +104,8 @@ switch (command) {
   case "do-what-it-says":
     says();
     break;
+}
+
+if (!command) {
+  console.log("You forgot to put in some commands, dum-dum! Here's what you can do:" + '\n' + "1. [my-tweets] to see my tweets." + '\n' + "2. [spotify-this-song] [song-name] to find some info about a song you like." + '\n' + "3. [movie-this] [movie-name] to find some info about a movie you like." + '\n' + "4. [do-what-it-says] to see what random.txt has in store for ya.");
 }

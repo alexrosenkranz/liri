@@ -114,3 +114,40 @@ Preview: https://p.scdn.co/mp3-preview/7d2d3746f1cd08e984d555c798f1e48122796eb4?
 
 ------------
 
+Spotify Search
+
+Artist: Red Hot Chili Peppers
+Song Name: Scar Tissue
+From Album: Californication (Deluxe Version)
+Preview: https://p.scdn.co/mp3-preview/8602533a3ae6da937635c5fd8ae270d53ad291dc?cid=null
+
+------------
+
+Movie Search
+
+Surf Ninjas
+Year: 1993
+IMDB Rating: 5.0
+Country: USA
+Language: English
+Plot: Brothers Johnny, an adolescent surf talent, and Adam, a preadolescent video-game addict, grow up care-free in California as adopted sons of Marines veteran Mac, inseparable friends of wacky...
+Actors: Ernie Reyes Sr., Ernie Reyes Jr., Nicolas Cowan, John Karlen
+Rotten Tomatoes Rating: 3.1
+Rotten Tomatoes URL: http://www.rottentomatoes.com/m/surf_ninjas/
+
+------------
+
+Movie Search
+
+Encino Man
+Year: 1992
+IMDB Rating: 5.7
+Country: USA
+Language: English
+Plot: When they find a frozen caveman in their back yard, two high school outcasts thaw him and introduce him to modern life while he in turn gets them to actually enjoy life.
+Actors: Sean Astin, Brendan Fraser, Pauly Shore, Megan Ward
+Rotten Tomatoes Rating: 2.9
+Rotten Tomatoes URL: http://www.rottentomatoes.com/m/encino_man/
+
+------------
+
