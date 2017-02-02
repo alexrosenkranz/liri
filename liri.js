@@ -95,7 +95,6 @@ switch (command) {
     tweets();
     break;
   case "spotify-this-song":
-    console.log(searchName);
     spotify();
     break;
   case "movie-this":
